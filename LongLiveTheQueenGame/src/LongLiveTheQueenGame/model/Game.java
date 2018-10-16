@@ -1,5 +1,5 @@
+package LongLiveTheQueenGame.model;
 
 public class Game {
-test
-test2
+	
 }
