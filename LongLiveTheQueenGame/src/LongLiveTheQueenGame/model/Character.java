@@ -5,23 +5,24 @@ import javafx.scene.image.Image;
 
 public abstract class Character {
 
+	
 	private String name;
-	private int face;			// 0 down, up 1
+	private boolean face;		
 	private String prestige;	// red yellow or blue
 	private int speed;			// order for players to take their turn
 	private Position position;
 	private Image picFront;
 	private Image picBack;
 	
-	public Character(String name, Position position, int face, String prestige, int speed, String picFrontLoc, String picBackLoc) {
+	public Character(String name, Position position, boolean face, String prestige, int speed, String picFrontLoc, String picBackLoc) {
 		try {
 			this.name = name;
 			this.position = position;
 			this.face = face;
 			this.prestige = prestige;
 			this.speed = speed;
-			this.picFront = new Image(new FileInputStream(picFrontLoc));
-			this.picBack = new Image(new FileInputStream(picBackLoc));
+			this.setPicFront(new Image(new FileInputStream(picFrontLoc)));
+			this.setPicBack(new Image(new FileInputStream(picBackLoc)));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -44,10 +45,10 @@ public abstract class Character {
 	}
 
 
-	public int getFace() {
+	public boolean getFace() {
 		return this.face;
 	}
-	public void setFace(int face) {
+	public void setFace(boolean face) {
 		this.face = face;
 	}
 
@@ -66,10 +67,27 @@ public abstract class Character {
 	public void setPosition(Position position) {
 		this.position = position;
 	}
-	
-	
 	public void setCharacterPosition(int a, int b) {
 		this.position.setX(a);
 		this.position.setY(b);
 	}
+
+
+	public Image getPicFront() {
+		return picFront;
+	}
+	public void setPicFront(Image picFront) {
+		this.picFront = picFront;
+	}
+
+
+	public Image getPicBack() {
+		return picBack;
+	}
+	public void setPicBack(Image picBack) {
+		this.picBack = picBack;
+	}
+	
+	
+	
 }
