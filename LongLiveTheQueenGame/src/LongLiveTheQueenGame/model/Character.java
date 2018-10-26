@@ -7,12 +7,13 @@ public abstract class Character {
 
 	
 	private String name;
-	private boolean face;		
 	private String prestige;	// red yellow or blue
 	private int speed;			// order for players to take their turn
 	private Position position;
 	private Image picFront;
 	private Image picBack;
+	private Image currPic;
+	
 	
 	public Character(String name, Position position, boolean face, String prestige, int speed, String picFrontLoc, String picBackLoc) {
 		try {
@@ -86,6 +87,12 @@ public abstract class Character {
 	}
 	public void setPicBack(Image picBack) {
 		this.picBack = picBack;
+	}
+	
+	
+	// all character specials here
+	public void sniperSpecial() {
+		
 	}
 	
 	

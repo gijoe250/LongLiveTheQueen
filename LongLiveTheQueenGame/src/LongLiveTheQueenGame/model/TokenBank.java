@@ -40,6 +40,9 @@ public class TokenBank {
 	}
 
 	
+	public void tokenCheck() {
+		
+	}
 
 }
 
