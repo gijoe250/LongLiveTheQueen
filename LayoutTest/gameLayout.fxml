@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GameController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="760.0" rotate="180.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <ImageView fx:id="T_10" fitHeight="150.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="T_9" fitHeight="150.0" fitWidth="76.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_8" fitHeight="150.0" fitWidth="76.0" layoutX="86.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_7" fitHeight="150.0" fitWidth="76.0" layoutX="86.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_6" fitHeight="150.0" fitWidth="76.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_5" fitHeight="150.0" fitWidth="76.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="T_4" fitHeight="150.0" fitWidth="76.0" layoutX="314.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_3" fitHeight="150.0" fitWidth="76.0" layoutX="390.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_2" fitHeight="150.0" fitWidth="76.0" layoutX="466.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="T_1" fitHeight="150.0" fitWidth="76.0" layoutX="618.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="-8.0" layoutY="285.0" prefHeight="100.0" prefWidth="760.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <ImageView fx:id="B_1" fitHeight="150.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="B_2" fitHeight="150.0" fitWidth="76.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_3" fitHeight="150.0" fitWidth="76.0" layoutX="86.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_4" fitHeight="150.0" fitWidth="76.0" layoutX="86.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_5" fitHeight="150.0" fitWidth="76.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="B_6" fitHeight="150.0" fitWidth="76.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_7" fitHeight="150.0" fitWidth="76.0" layoutX="314.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_8" fitHeight="150.0" fitWidth="76.0" layoutX="390.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_9" fitHeight="150.0" fitWidth="76.0" layoutX="466.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="B_10" fitHeight="150.0" fitWidth="76.0" layoutX="618.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlackPlayers_02.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="diceResult" alignment="CENTER" layoutX="674.0" layoutY="500.0" prefHeight="33.0" prefWidth="51.0" text="result">
+         <font>
+            <Font name="Comic Sans MS" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="677.0" layoutY="469.0" mnemonicParsing="false" onAction="#diceRoll" text="Roll" />
+      <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#handle" text="Main Menu" />
+      <Label fx:id="currentPlayer" layoutX="33.0" layoutY="474.0" text="Current Player">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
