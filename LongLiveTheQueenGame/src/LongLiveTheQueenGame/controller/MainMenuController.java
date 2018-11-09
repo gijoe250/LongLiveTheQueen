@@ -2,7 +2,7 @@ package LongLiveTheQueenGame.controller;
 
 import java.io.IOException;
 
-import LongLiveTheQueenGame.Main;
+import LongLiveTheQueenGame.view.Main;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

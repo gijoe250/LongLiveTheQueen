@@ -1,6 +1,7 @@
 package LongLiveTheQueenGame.model;
 
 import java.io.File;
+import java.util.Random;
 
 import javafx.scene.control.Pagination;
 import javafx.scene.image.Image;
@@ -16,7 +17,7 @@ public class Game {
 	private boolean playerTurn;	// true = p1, false is p2
 	private int dice;
 	
-	public void Game() {
+	public Game() {
 		this.tokenBank = new TokenBank(6, 6, 6);
 		this.p1 = new Player();
 		this.p2 = new Player();
@@ -55,6 +56,14 @@ public class Game {
 	}
 	
 	
+	public int getDice() {
+		return this.dice;
+	}
+	public void setDice(int dice) {
+		this.dice = dice;
+	}
+	
+	
 	public void loadPicFronts() {
 		File files[] = new File("frontImages").listFiles();
 		for (File file : files) {
@@ -81,6 +90,15 @@ public class Game {
 				
 		}
 		
+	}
+	
+	
+	
+	public int rollDice() {
+		Random diceRoller = new Random();
+		int value = diceRoller.nextInt(6)+1;
+		value += diceRoller.nextInt(6)+1;
+		return value;
 	}
 	
 	

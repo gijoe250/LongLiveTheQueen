@@ -85,7 +85,7 @@ public abstract class Character {
 	public Image getPicBack() {
 		return picBack;
 	}
-	public void setPicBack(Image picBack) {
+	public void setPicBack( picBack) {
 		this.picBack = picBack;
 	}
 	

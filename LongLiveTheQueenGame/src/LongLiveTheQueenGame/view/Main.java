@@ -1,5 +1,6 @@
 package LongLiveTheQueenGame.view;
 	
+import LongLiveTheQueenGame.model.Game;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,7 +16,7 @@ import javafx.scene.Scene;
 public class Main extends Application {
 	
 	public static Stage stage;
-	//public static Game game = new game();
+	public static Game game = new Game();
 	
 	@Override
 	public void start(Stage primaryStage) {

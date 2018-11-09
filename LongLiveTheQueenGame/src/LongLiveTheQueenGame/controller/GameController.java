@@ -2,7 +2,7 @@ package LongLiveTheQueenGame.controller;
 
 import java.io.IOException;
 
-import LongLiveTheQueenGame.Main;
+import LongLiveTheQueenGame.view.Main;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -73,7 +73,8 @@ public class GameController implements EventHandler<ActionEvent>{
 	 */
 	public void initialize(){
 		
-		Main.game.loadImages();
+		Main.game.loadFrontPics();
+		Main.game.loadBackPics();
 		T_1.setImage(Main.game.p1.getCharacters.getPicBack());
 		
 	}
@@ -88,12 +89,12 @@ public class GameController implements EventHandler<ActionEvent>{
 	}
 	
 	public void diceRoll(ActionEvent event){
-		diceResult.setValue( Main.game.rollDice());
+		Main.game.setDice( Main.game.rollDice() );
 		
-		if(Main.game.setPlayerTurn == false){
-			Main.game.setPlayerTurn = true;
+		if(Main.game.getPlayerTurn() == false){
+			Main.game.setPlayerTurn(true);
 		}else{
-			Main.game.setPlayerTurn = false;
+			Main.game.setPlayerTurn(false);
 		}
 	}
 	
